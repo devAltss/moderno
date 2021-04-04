@@ -1,24 +1,24 @@
-@import 'vars';
-@import 'global';
-@import 'fonts';
+@import "vars";
+@import "global";
+@import "fonts";
 
 // --- Start Header
-.header__top-inner{
+.header__top-inner {
   display: flex;
   justify-content: space-between;
   height: 90px;
   align-items: center;
 }
 
-.header__text{
+.header__text {
   margin-left: auto;
   margin-right: 50px;
-  span{
+  span {
     color: $red;
   }
 }
 
-.header__btn{
+.header__btn {
   padding: 4px;
   width: 72px;
   border-radius: 4px;
@@ -27,67 +27,67 @@
   font-size: 12px;
 }
 
-.header__btn-login{
+.header__btn-login {
   background-color: $green;
 }
 
-.header__btn-register{
+.header__btn-register {
   background-color: $red;
   margin-left: 7px;
 }
 
-.header__menu{
+.header__menu {
   background-color: $bg;
 }
 
-.menu{
+.menu {
   display: flex;
   align-items: center;
   height: 60px;
 }
 
-.menu__list{
-  li{
+.menu__list {
+  li {
     display: inline-block;
-    & + li{
+    & + li {
       margin-left: 30px;
     }
   }
-  a{
+  a {
     color: #fff;
     font-size: 14px;
   }
 }
 // ----- End Header
 // ---- start search
-.search{
+.search {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 533px;
 }
 
-.search__inner{
+.search__inner {
   padding: 155px 0px 100px;
   color: #fff;
   text-align: center;
-  &-title{
+  &-title {
     margin-bottom: 10px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     line-height: 72px;
   }
-  &-text{
+  &-text {
     margin-bottom: 50px;
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     line-height: 30px;
   }
-  &-form{
+  &-form {
     max-width: 670px;
     margin: 0 auto;
     position: relative;
-    input{
+    input {
       display: inline-block;
       width: 100%;
       box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
@@ -95,15 +95,15 @@
       height: 56px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       padding-left: 25px;
       padding-right: 60px;
-      &::placeholder{
+      &::placeholder {
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
-    button{
+    button {
       position: absolute;
       border: none;
       background-color: transparent;
@@ -114,88 +114,88 @@
 }
 // ----- end search
 // ---- start products
-.products{
-padding: 110px 0;
-background-color: $grey;
+.products {
+  padding: 110px 0;
+  background-color: $grey;
 }
-.products__inner-btn{
+.products__inner-btn {
   text-align: center;
   margin-bottom: 60px;
-  button{
+  button {
     padding: 12px 21px;
     border: none;
     background-color: #fff;
     color: $bg;
     outline: none;
     cursor: pointer;
-    & + button{
+    & + button {
       margin-left: 5px;
     }
-    &:hover{
+    &:hover {
       box-shadow: 0px 1px 14px 3px rgba(255, 43, 43, 0.1);
     }
-    &.mixitup-control-active{
+    &.mixitup-control-active {
       background-color: $red;
-      color: #fff; 
+      color: #fff;
     }
   }
 }
-.products__inner-box{
+.products__inner-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.product__item{
+.product__item {
   max-width: 442px;
   width: 100%;
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
   margin-bottom: 30px;
-  &-img{
+  &-img {
     min-height: 250px;
     background-repeat: no-repeat;
     display: block;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
   }
-  &-content{
+  &-content {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;
   }
-  &-name{
+  &-name {
     max-width: 310px;
   }
-  &-title{
+  &-title {
     color: $bg;
     font-size: 18px;
     display: block;
   }
-  &-category{
+  &-category {
     font-size: 14px;
     color: $green;
     display: block;
   }
-  &-price{
+  &-price {
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f500;
   }
-  &-info{
+  &-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
     padding: 10px 30px;
   }
-  &-author{
+  &-author {
     display: flex;
     align-items: center;
     max-width: 245px;
-    .avatar{
+    .avatar {
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -205,25 +205,25 @@ background-color: $grey;
       background-size: cover;
       margin-right: 14px;
     }
-    span{
+    span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
-  &-star{
+  &-star {
     font-size: 12px;
-    p{
+    p {
       color: #b0bec5;
       display: inline-block;
     }
-    span{
+    span {
       color: $bg;
     }
   }
 }
-.products__bottom-btn{
+.products__bottom-btn {
   text-align: center;
-  button{
+  button {
     margin: 45px 5px 0;
     box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
     border: none;
@@ -233,31 +233,31 @@ background-color: $grey;
     padding: 20px 30px;
     cursor: pointer;
     outline: none;
-    &:hover{
+    &:hover {
       box-shadow: 0px 1px 14px 3px rgba(255, 43, 43, 0.1);
     }
-    &.mixitup-control-active{
+    &.mixitup-control-active {
       background-color: $red;
-      color: #fff; 
+      color: #fff;
     }
   }
 }
 // ----- end products
 // ---- start product-slider
-.product-slider{
+.product-slider {
   padding: 110px 0px 120px;
-  .slick-dots{
+  .slick-dots {
     text-align: center;
     margin-top: 50px;
-    li{
+    li {
       display: inline-block;
       margin: 0 3px;
-      &.slick-active{
-        button{
+      &.slick-active {
+        button {
           background-color: $green;
         }
       }
-      button{
+      button {
         border-radius: 50%;
         background-color: rgb(232, 232, 232);
         border: none;
@@ -270,19 +270,56 @@ background-color: $grey;
     }
   }
 }
-
-
-
-
-.Ellipse_6 {
-  border-radius: 50%;
-  background-color: rgb(232, 232, 232);
-  position: absolute;
-  left: 915px;
-  top: 2761px;
-  width: 22px;
-  height: 22px;
-  z-index: 168;
+// ----- end product-slider
+// ---- start advantages
+.advantages{
+  background-color: $bg;
+  padding: 100px 0;
+}
+.advantages__title{
+  color: #fff;
+}
+.advantages__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__item{
+  max-width: 380px;
+  text-align: center;
+  padding: 0px 15px;
+  
+  &:hover{
+    .advantages__item-images{
+      background-color: $green;
+      g{
+        fill: #fff;
+      }
+    }
+    .advantages__item-title{
+      color: $green;
+    }
+  }
+  &-images{
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all .5s ease;
+  }
+  &-title{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 25px;
+    @include f500;
+    transition: all .5s ease;
+  }
+  &-text{
+    font-size: 15px;
+  }  
 }
 
 
@@ -292,8 +329,5 @@ background-color: $grey;
 
 
 
-
-
-
-// ----- end product-slider
-// ---- start 
+// ----- end advantages
+// ---- start
