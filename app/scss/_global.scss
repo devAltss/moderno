@@ -23,6 +23,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: $text;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1200px;
@@ -51,7 +52,18 @@ body {
   display: inline-block;
   margin-right: 13px;
 }
-
+.angle-right{
+  position: relative;
+  padding-left: 17px;
+  &::before{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: $green;
+    font-size: 14px;
+  }
+}
 
 
 
