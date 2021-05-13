@@ -1692,25 +1692,24 @@
   }
 }
 .profile-settings{
-.product-one__tabs.settings__tabs{
-  .tabs span{
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 500;
-    color: #707070;
-    position: relative;
-    &.active::before{
-      color: $green;
+  .product-one__tabs.settings__tabs{
+    .tabs span{
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 500;
+      color: #707070;
+      position: relative;
+      &.active::before{
+        color: $green;
+      }
+      &::before{ 
+        font-family: 'icomoon';
+        position: absolute;
+        top: 15px;
+        left: 24px;
+        color: #d0d0d0;
+        font-size: 14px;
+      }
     }
-    &::before{ 
-      font-family: 'icomoon';
-      position: absolute;
-      top: 15px;
-      left: 24px;
-      color: #d0d0d0;
-      font-size: 14px;
-    }
-  }
-
   }
 }
 .personal-box{
